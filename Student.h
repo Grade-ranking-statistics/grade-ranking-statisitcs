@@ -21,6 +21,8 @@ public:
 	void setCourse(Course);
 	Course getCourse();
 	void printStudent();
-
+	static int getNumOfStu();
+	void getPass();
+	void getRanking();
 };
 #endif
