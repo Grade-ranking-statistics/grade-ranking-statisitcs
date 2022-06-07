@@ -1,24 +1,23 @@
-#ifndef COURSE_H
+#ifndef COURSE_H 
 #define COURSE_H
 
-class Course
+using namespace std;
+
+class Course 
 {
 private:
-	double gradeChinese;
+	double gradeChinese; 
 	double gradeMath;
 	double gradeEnglish;
-	double average;
-public:
+public: 
 	Course(double, double, double);
 	Course();
 	void setChinese(double);
-	double getChinese(); //chinese weighted score
+	double getChinese();
 	void setMath(double);
-	double getMath(); //math weighted score
+	double getMath(); 
 	void setEnglish(double);
-	double getEnglish(); //english weighted score
-	double getAverage(); // average of weight score
-	//void printScore(); 
-
+	double getEnglish(); 
+	double getAverage(); 
 };
 #endif
