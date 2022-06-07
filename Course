@@ -1,14 +1,14 @@
-#include"Course.h"//標頭檔
+#include"Course.h"
 #include<iostream>
 using namespace std;
 
-Course::Course()//無輸入
+Course::Course()
 {
 	gradeChinese = 0;
 	gradeMath = 0;
 	gradeEnglish = 0;
 }
-Course::Course(double newChinese, double newMath, double  newEnglish)//新的分數 因為要計算加權
+Course::Course(double newChinese, double newMath, double  newEnglish)
 {
 	gradeChinese = newChinese;
 	gradeMath = newMath;
@@ -17,29 +17,29 @@ Course::Course(double newChinese, double newMath, double  newEnglish)//新的分
 void Course::setChinese(double newChinese)
 {
 	gradeChinese = newChinese;
-}// set 設定
+}
 double Course::getChinese()
 {
 	return gradeChinese * 1.5;
-}// get 回傳
+}
 void Course::setMath(double newMath)
 {
 	gradeMath = newMath;
-}// set 設定
+}
 double Course::getMath()
 {
 	return gradeMath * 2.0;
-}// get 回傳
+}
 void Course::setEnglish(double newEnglish)
 {
 	gradeEnglish = newEnglish;
-}// set 設定
+}
 double Course::getEnglish()
 {
 	return gradeEnglish * 1.5;
-}// get 回傳
+}
 double Course::getAverage()
-{// get 回傳
+{
 	double average;
 	average = (gradeChinese * 1.5 + gradeMath * 2.0 + gradeEnglish * 1.5) / (1.5 + 2.0 + 1.5);
 	return average;
